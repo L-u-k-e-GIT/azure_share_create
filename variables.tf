@@ -17,3 +17,5 @@ variable "MD_SHAREQUOTA" {
  type = string
  default = ""
 }
+
+variable "MD_ALL_TAGS" { }
