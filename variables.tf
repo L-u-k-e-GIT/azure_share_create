@@ -18,4 +18,4 @@ variable "MD_SHAREQUOTA" {
  default = ""
 }
 
-
+variable "MD_FS_METADATA" { }
