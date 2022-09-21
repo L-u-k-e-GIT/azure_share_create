@@ -4,6 +4,11 @@ resource "azurerm_storage_share" "FSShare" {
   storage_account_name = var.MD_ST_NAME
   quota                = var.MD_SHAREQUOTA
   metadata             = var.MD_FS_METADATA
+  lifecycle {
+    ignore_changes = [
+     metadata
+    ]
+  }
 
 }
 
